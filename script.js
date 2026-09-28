@@ -26,6 +26,8 @@ if (document.querySelector('.digital-hero') && !document.querySelector('.campaig
   const section = document.createElement('section'); section.className = 'campaign-section section-pad';
   section.innerHTML = `<div class="container"><div class="section-heading"><div><p class="eyebrow">Kits prontos para suas campanhas</p><h2>Comunicação que <span>gera conexão.</span></h2></div><p>Kits de imagens para empresas, lojas, profissionais e redes sociais.</p></div><div class="campaign-grid"><article class="campaign-card campaign-card--yellow"><span class="campaign-month">SETEMBRO</span><h3>Setembro Amarelo</h3><p>Conteúdos de conscientização e valorização da vida.</p><a href="${checkout}" target="_blank" rel="noopener">Comprar kit ↗</a></article><article class="campaign-card campaign-card--pink"><span class="campaign-month">OUTUBRO</span><h3>Outubro Rosa</h3><p>Artes para prevenção e cuidado com a saúde da mulher.</p><span class="campaign-soon">Link em breve</span></article><article class="campaign-card campaign-card--blue"><span class="campaign-month">NOVEMBRO</span><h3>Novembro Azul</h3><p>Materiais para conscientização e prevenção da saúde do homem.</p><span class="campaign-soon">Link em breve</span></article></div><div class="campaign-cta"><div><strong>Comece pelo Setembro Amarelo.</strong><span>Os próximos kits terão seus próprios links de checkout.</span></div><a class="button button--primary" href="${checkout}" target="_blank" rel="noopener">Comprar agora <span>↗</span></a></div></div>`;
   document.querySelector('.digital-hero').after(section);
+  const septemberLink = section.querySelector('.campaign-card--yellow a');
+  if (septemberLink) { septemberLink.href = 'kit-setembro-amarelo.html'; septemberLink.textContent = 'Ver detalhes do kit ↗'; septemberLink.removeAttribute('target'); }
 }
 
 if (document.querySelector('.products-grid')) {
@@ -38,7 +40,7 @@ if (document.querySelector('.products-grid')) {
   document.querySelectorAll('.filter-btn').forEach(button=>button.addEventListener('click',()=>{ document.querySelectorAll('.filter-btn').forEach(item=>item.classList.remove('is-active')); button.classList.add('is-active'); const filter=button.dataset.filter; document.querySelectorAll('.product-card').forEach(card=>card.classList.toggle('is-hidden',filter!=='todos'&&card.dataset.category!==filter)); }));
 }
 
-if (document.querySelector('.digital-hero')) {
+if (document.querySelector('.digital-hero') && !document.querySelector('.campaign-section')) {
   const checkoutUrl = 'https://pay.kiwify.com.br/ey4EZjF';
   const heroActions = document.querySelector('.digital-hero .hero-actions');
   if (heroActions) {
