@@ -10,6 +10,15 @@ document.querySelectorAll('.nav-links a').forEach((link) => link.addEventListene
 }));
 document.getElementById('year').textContent = new Date().getFullYear();
 
+document.querySelectorAll('.nav-links').forEach((nav) => {
+  if (!nav.querySelector('a[href="produtos-digitais.html"]')) {
+    const digitalLink = document.createElement('a');
+    digitalLink.href = 'produtos-digitais.html';
+    digitalLink.textContent = 'Digitais';
+    nav.appendChild(digitalLink);
+  }
+});
+
 if (document.querySelector('.products-grid')) {
   const style = document.createElement('style'); style.textContent = '.kit-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:55px}.kit-card{padding:28px;background:var(--surface);border:1px solid var(--line);border-radius:8px}.kit-card--featured{background:linear-gradient(145deg,#114b65,#0d2338);border-color:rgba(24,231,244,.4)}.kit-index{color:var(--cyan);font-size:10px;letter-spacing:2px}.kit-card h3{font-size:24px;margin:30px 0 10px}.kit-card p{color:var(--muted);font-size:13px;min-height:42px;margin:0 0 18px}.kit-card a{color:var(--cyan);font-size:11px;font-weight:700;text-decoration:none}@media(max-width:800px){.kit-grid{grid-template-columns:1fr}}'; document.head.appendChild(style);
   const filters = document.querySelector('.filter-list');
