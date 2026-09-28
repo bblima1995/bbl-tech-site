@@ -8,6 +8,8 @@ Páginas adicionais: `servicos.html`, `sobre.html`, `projetos.html` e `contato.h
 
 A página `produtos-digitais.html` reúne licenças, antivírus, produtividade, templates, configuração remota e backup em nuvem.
 
+A página inicial também possui uma vitrine de produtos em destaque e um banner para os kits digitais.
+
 ## Cloudflare Pages
 
 Este é um site Static HTML. No Cloudflare Pages, use `index.html` como arquivo principal, deixe o diretório de saída como a raiz do projeto e use `exit 0` como comando de build quando a publicação estiver conectada a um repositório Git. O arquivo `_headers` já está incluído para aplicar headers básicos de segurança.
