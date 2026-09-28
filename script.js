@@ -19,6 +19,15 @@ document.querySelectorAll('.nav-links').forEach((nav) => {
   }
 });
 
+if (document.querySelector('.digital-hero') && !document.querySelector('.campaign-section')) {
+  const checkout = 'https://pay.kiwify.com.br/ey4EZjF';
+  const buttonArea = document.querySelector('.digital-hero .hero-actions');
+  if (buttonArea) buttonArea.insertAdjacentHTML('afterbegin', `<a class="button button--primary" href="${checkout}" target="_blank" rel="noopener">Comprar agora <span>↗</span></a>`);
+  const section = document.createElement('section'); section.className = 'campaign-section section-pad';
+  section.innerHTML = `<div class="container"><div class="section-heading"><div><p class="eyebrow">Kits prontos para suas campanhas</p><h2>Comunicação que <span>gera conexão.</span></h2></div><p>Kits de imagens para empresas, lojas, profissionais e redes sociais.</p></div><div class="campaign-grid"><article class="campaign-card campaign-card--yellow"><span class="campaign-month">SETEMBRO</span><h3>Setembro Amarelo</h3><p>Conteúdos de conscientização e valorização da vida.</p><a href="${checkout}" target="_blank" rel="noopener">Comprar kit ↗</a></article><article class="campaign-card campaign-card--pink"><span class="campaign-month">OUTUBRO</span><h3>Outubro Rosa</h3><p>Artes para prevenção e cuidado com a saúde da mulher.</p><span class="campaign-soon">Link em breve</span></article><article class="campaign-card campaign-card--blue"><span class="campaign-month">NOVEMBRO</span><h3>Novembro Azul</h3><p>Materiais para conscientização e prevenção da saúde do homem.</p><span class="campaign-soon">Link em breve</span></article></div><div class="campaign-cta"><div><strong>Comece pelo Setembro Amarelo.</strong><span>Os próximos kits terão seus próprios links de checkout.</span></div><a class="button button--primary" href="${checkout}" target="_blank" rel="noopener">Comprar agora <span>↗</span></a></div></div>`;
+  document.querySelector('.digital-hero').after(section);
+}
+
 if (document.querySelector('.products-grid')) {
   const style = document.createElement('style'); style.textContent = '.kit-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:55px}.kit-card{padding:28px;background:var(--surface);border:1px solid var(--line);border-radius:8px}.kit-card--featured{background:linear-gradient(145deg,#114b65,#0d2338);border-color:rgba(24,231,244,.4)}.kit-index{color:var(--cyan);font-size:10px;letter-spacing:2px}.kit-card h3{font-size:24px;margin:30px 0 10px}.kit-card p{color:var(--muted);font-size:13px;min-height:42px;margin:0 0 18px}.kit-card a{color:var(--cyan);font-size:11px;font-weight:700;text-decoration:none}@media(max-width:800px){.kit-grid{grid-template-columns:1fr}}'; document.head.appendChild(style);
   const filters = document.querySelector('.filter-list');
