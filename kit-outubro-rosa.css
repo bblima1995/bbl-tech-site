@@ -3,6 +3,7 @@
 .button--pink{display:inline-flex;align-items:center;justify-content:center;gap:14px;border-radius:6px;padding:15px 22px;background:#ff91ba;color:#27101c;text-decoration:none;font-size:13px;font-weight:700;box-shadow:0 12px 30px rgba(255,145,186,.18);transition:transform .2s,background .2s}
 .button--pink:hover{transform:translateY(-2px);background:#ffc0d6}
 .pink-kit-preview{padding:18px;border:1px solid rgba(255,145,186,.58);border-radius:14px;background:linear-gradient(145deg,#fff5f8,#ffd9e7 52%,#fff0f5);box-shadow:0 20px 80px rgba(255,110,165,.14)}
+.pink-kit-preview img{display:block;width:100%;height:auto;max-height:720px;object-fit:contain;border-radius:8px}
 .pink-preview-frame{min-height:520px;padding:34px 24px;border:1px solid #e995b5;border-radius:11px;background:radial-gradient(circle at 50% 45%,#fff 0,#fff4f8 45%,#ffe1ec 100%);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;color:#69344a;position:relative;overflow:hidden}
 .pink-preview-frame:before,.pink-preview-frame:after{content:"";position:absolute;width:250px;height:250px;border:1px solid rgba(218,91,143,.3);border-radius:50%}
 .pink-preview-frame:before{top:-160px;left:-120px}.pink-preview-frame:after{right:-140px;bottom:-165px}
