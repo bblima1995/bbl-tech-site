@@ -10,7 +10,7 @@ A página `produtos-digitais.html` reúne licenças, antivírus, produtividade, 
 
 A página inicial também possui uma vitrine de produtos em destaque e um banner para os kits digitais.
 
-Página dedicada ao Kit Outubro Rosa: `kit-outubro-rosa.html`, com apresentação ilustrativa em CSS e contato para consultar compra. O checkout poderá ser conectado quando o link específico estiver disponível.
+Página dedicada ao Kit Outubro Rosa: `kit-outubro-rosa.html`, com apresentação ilustrativa em CSS, 50 artes digitais e checkout Kiwify `https://pay.kiwify.com.br/Ezfstov`.
 
 ## Cloudflare Pages
 
