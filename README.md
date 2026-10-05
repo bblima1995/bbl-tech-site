@@ -10,6 +10,8 @@ A página `produtos-digitais.html` reúne licenças, antivírus, produtividade, 
 
 A página inicial também possui uma vitrine de produtos em destaque e um banner para os kits digitais.
 
+Página dedicada ao Kit Outubro Rosa: `kit-outubro-rosa.html`, com apresentação ilustrativa em CSS e contato para consultar compra. O checkout poderá ser conectado quando o link específico estiver disponível.
+
 ## Cloudflare Pages
 
 Este é um site Static HTML. No Cloudflare Pages, use `index.html` como arquivo principal, deixe o diretório de saída como a raiz do projeto e use `exit 0` como comando de build quando a publicação estiver conectada a um repositório Git. O arquivo `_headers` já está incluído para aplicar headers básicos de segurança.

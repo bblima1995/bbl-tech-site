@@ -28,6 +28,8 @@ if (document.querySelector('.digital-hero') && !document.querySelector('.campaig
   document.querySelector('.digital-hero').after(section);
   const septemberLink = section.querySelector('.campaign-card--yellow a');
   if (septemberLink) { septemberLink.href = 'kit-setembro-amarelo.html'; septemberLink.textContent = 'Ver detalhes do kit ↗'; septemberLink.removeAttribute('target'); }
+  const octoberCard = section.querySelector('.campaign-card--pink');
+  if (octoberCard) { const octoberLink = document.createElement('a'); octoberLink.href = 'kit-outubro-rosa.html'; octoberLink.textContent = 'Ver detalhes do kit ↗'; octoberCard.querySelector('.campaign-soon')?.replaceWith(octoberLink); }
 }
 
 if (document.querySelector('.products-grid')) {

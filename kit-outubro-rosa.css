@@ -1,0 +1,20 @@
+.kit-hero--pink{background:radial-gradient(circle at 72% 35%,rgba(255,126,177,.17),transparent 38%)}
+.kit-hero--pink h1 span{color:#ff86b4}
+.button--pink{display:inline-flex;align-items:center;justify-content:center;gap:14px;border-radius:6px;padding:15px 22px;background:#ff91ba;color:#27101c;text-decoration:none;font-size:13px;font-weight:700;box-shadow:0 12px 30px rgba(255,145,186,.18);transition:transform .2s,background .2s}
+.button--pink:hover{transform:translateY(-2px);background:#ffc0d6}
+.pink-kit-preview{padding:18px;border:1px solid rgba(255,145,186,.58);border-radius:14px;background:linear-gradient(145deg,#fff5f8,#ffd9e7 52%,#fff0f5);box-shadow:0 20px 80px rgba(255,110,165,.14)}
+.pink-preview-frame{min-height:520px;padding:34px 24px;border:1px solid #e995b5;border-radius:11px;background:radial-gradient(circle at 50% 45%,#fff 0,#fff4f8 45%,#ffe1ec 100%);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;color:#69344a;position:relative;overflow:hidden}
+.pink-preview-frame:before,.pink-preview-frame:after{content:"";position:absolute;width:250px;height:250px;border:1px solid rgba(218,91,143,.3);border-radius:50%}
+.pink-preview-frame:before{top:-160px;left:-120px}.pink-preview-frame:after{right:-140px;bottom:-165px}
+.pink-preview-label{font-size:10px;letter-spacing:2.3px;font-weight:700;color:#b64e79}
+.pink-preview-frame h2{font:700 clamp(34px,4vw,54px)/1.05 'Space Grotesk',sans-serif;letter-spacing:2px;margin:20px 0 10px;color:#71384f}
+.pink-preview-frame h2 strong{color:#d75f91}
+.pink-preview-frame p{font-size:10px;letter-spacing:1.5px;color:#ad6681}
+.pink-ribbon{width:90px;height:112px;margin-top:48px;position:relative;transform:rotate(-8deg)}
+.pink-ribbon:before,.pink-ribbon:after{content:"";position:absolute;width:30px;height:78px;top:2px;border:10px solid #e979a4;border-radius:18px 18px 5px 5px}
+.pink-ribbon:before{left:10px;transform:rotate(-28deg)}.pink-ribbon:after{right:10px;transform:rotate(28deg)}
+.pink-ribbon{border-bottom:40px solid transparent}.pink-ribbon:after{box-shadow:0 48px 0 -10px #e979a4}
+.pink-preview-caption{position:absolute;bottom:20px;font-size:10px;color:#ad6681;letter-spacing:1px;text-transform:uppercase}
+.kit-benefits--pink article{border-color:rgba(255,145,186,.24)}.kit-benefits--pink strong{color:#ff91ba}
+.kit-buy-box--pink{border-color:rgba(255,145,186,.48);background:linear-gradient(100deg,#472438,#10253b)}.kit-buy-box--pink .eyebrow{color:#ff91ba}
+@media(max-width:800px){.pink-preview-frame{min-height:400px}}
